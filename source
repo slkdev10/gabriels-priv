@@ -1,0 +1,297 @@
+-- This 'Ui To Lua' Plugin has been made by hold4564.
+wait(5);
+function CreateGui()
+	-- This 'Ui To Lua' Plugin has been made by hold4564.
+
+	local uiElements = {
+		["kill-aura"] = Instance.new("ScreenGui"),
+		["Enable"] = Instance.new("TextButton"),
+		["ImageLabel"] = Instance.new("ImageLabel"),
+		["ImageLabel_1"] = Instance.new("ImageLabel"),
+		["TextButton"] = Instance.new("TextLabel"),
+		["ImageLabel_2"] = Instance.new("ImageLabel"),
+		["TextButton_1"] = Instance.new("TextLabel"),
+		["AddUser"] = Instance.new("TextBox"),
+		["AddUser_1"] = Instance.new("TextButton"),
+		["ImageLabel_3"] = Instance.new("ImageLabel"),
+		["Users"] = Instance.new("TextLabel"),
+		["Hide"] = Instance.new("TextButton"),
+		["ImageLabel_4"] = Instance.new("ImageLabel")
+	}
+	
+	uiElements["kill-aura"].Parent = game:GetService("CoreGui");
+
+	uiElements["Enable"].Parent = uiElements["kill-aura"]
+	uiElements["Enable"].Position = UDim2.new(0.7003836035728455, 0, 0.943221390247345, 0)
+	uiElements["Enable"].Size = UDim2.new(0.2814580500125885, 0, 0.0355546735227108, 0)
+	uiElements["Enable"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["Enable"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["Enable"].BorderSizePixel = 0
+	uiElements["Enable"].ZIndex = 2
+	uiElements["Enable"].BackgroundTransparency = 1
+	uiElements["Enable"].Font = Enum.Font.Garamond
+	uiElements["Enable"].TextScaled = true
+	uiElements["Enable"].TextColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["Enable"].TextSize = 14
+	uiElements["Enable"].Text = "ENABLE KILL AURA"
+	uiElements["Enable"].TextWrapped = true
+
+	uiElements["ImageLabel"].Parent = uiElements["kill-aura"]
+	uiElements["ImageLabel"].Position = UDim2.new(0.7003836035728455, 0, 0.943221390247345, 0)
+	uiElements["ImageLabel"].Size = UDim2.new(0.2814580500125885, 0, 0.0355546735227108, 0)
+	uiElements["ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["ImageLabel"].ImageColor3 = Color3.fromRGB(243, 227, 187)
+	uiElements["ImageLabel"].BorderColor3 = Color3.fromRGB(43, 36, 25)
+	uiElements["ImageLabel"].BorderSizePixel = 5
+	uiElements["ImageLabel"].Image = "rbxassetid://4701838826"
+	uiElements["ImageLabel"].ScaleType = Enum.ScaleType.Crop
+
+	uiElements["ImageLabel_1"].Parent = uiElements["kill-aura"]
+	uiElements["ImageLabel_1"].Position = UDim2.new(0.7003836035728455, 0, 0.5432909727096558, 0)
+	uiElements["ImageLabel_1"].Size = UDim2.new(0.2814580500125885, 0, 0.38026368618011475, 0)
+	uiElements["ImageLabel_1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["ImageLabel_1"].ImageColor3 = Color3.fromRGB(243, 227, 187)
+	uiElements["ImageLabel_1"].BorderColor3 = Color3.fromRGB(43, 36, 25)
+	uiElements["ImageLabel_1"].BorderSizePixel = 5
+	uiElements["ImageLabel_1"].Image = "rbxassetid://4701838826"
+	uiElements["ImageLabel_1"].ScaleType = Enum.ScaleType.Crop
+
+	uiElements["TextButton"].Parent = uiElements["kill-aura"]
+	uiElements["TextButton"].Position = UDim2.new(0.7003836035728455, 0, 0.5432214140892029, 0)
+	uiElements["TextButton"].Size = UDim2.new(0.2814580500125885, 0, 0.03669329732656479, 0)
+	uiElements["TextButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["TextButton"].BorderSizePixel = 0
+	uiElements["TextButton"].ZIndex = 2
+	uiElements["TextButton"].BackgroundTransparency = 1
+	uiElements["TextButton"].Font = Enum.Font.Garamond
+	uiElements["TextButton"].TextScaled = true
+	uiElements["TextButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["TextButton"].Text = "WHITELIST"
+	uiElements["TextButton"].TextWrapped = true
+
+	uiElements["ImageLabel_2"].Parent = uiElements["kill-aura"]
+	uiElements["ImageLabel_2"].Position = UDim2.new(0.7125517725944519, 0, 0.3389660716056824, 0)
+	uiElements["ImageLabel_2"].Size = UDim2.new(0.2571217715740204, 0, 0.17324110865592957, 0)
+	uiElements["ImageLabel_2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["ImageLabel_2"].ImageColor3 = Color3.fromRGB(243, 227, 187)
+	uiElements["ImageLabel_2"].BorderColor3 = Color3.fromRGB(43, 36, 25)
+	uiElements["ImageLabel_2"].BorderSizePixel = 5
+	uiElements["ImageLabel_2"].Image = "rbxassetid://4701838826"
+	uiElements["ImageLabel_2"].ScaleType = Enum.ScaleType.Crop
+
+	uiElements["TextButton_1"].Parent = uiElements["kill-aura"]
+	uiElements["TextButton_1"].Position = UDim2.new(0.7003836035728455, 0, 0.33896610140800476, 0)
+	uiElements["TextButton_1"].Size = UDim2.new(0.2814580500125885, 0, 0.03669329732656479, 0)
+	uiElements["TextButton_1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["TextButton_1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["TextButton_1"].BorderSizePixel = 0
+	uiElements["TextButton_1"].ZIndex = 2
+	uiElements["TextButton_1"].BackgroundTransparency = 1
+	uiElements["TextButton_1"].Font = Enum.Font.Garamond
+	uiElements["TextButton_1"].TextScaled = true
+	uiElements["TextButton_1"].TextColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["TextButton_1"].Text = "ADD USERS"
+	uiElements["TextButton_1"].TextWrapped = true
+
+	uiElements["AddUser"].Parent = uiElements["kill-aura"]
+	uiElements["AddUser"].Position = UDim2.new(0.7125519514083862, 0, 0.3744269907474518, 0)
+	uiElements["AddUser"].Size = UDim2.new(0.257121741771698, 0, 0.09664534777402878, 0)
+	uiElements["AddUser"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["AddUser"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["AddUser"].BorderSizePixel = 0
+	uiElements["AddUser"].ZIndex = 2
+	uiElements["AddUser"].BackgroundTransparency = 1
+	uiElements["AddUser"].Font = Enum.Font.Garamond
+	uiElements["AddUser"].TextScaled = true
+	uiElements["AddUser"].TextColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["AddUser"].Text = ""
+	uiElements["AddUser"].PlaceholderText = "Type an user"
+	uiElements["AddUser"].PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["AddUser"].TextWrapped = true
+
+	uiElements["AddUser_1"].Parent = uiElements["kill-aura"]
+	uiElements["AddUser_1"].Position = UDim2.new(0.7202951312065125, 0, 0.47351065278053284, 0)
+	uiElements["AddUser_1"].Size = UDim2.new(0.240528866648674, 0, 0.027044037356972694, 0)
+	uiElements["AddUser_1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["AddUser_1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["AddUser_1"].BorderSizePixel = 0
+	uiElements["AddUser_1"].ZIndex = 2
+	uiElements["AddUser_1"].BackgroundTransparency = 1
+	uiElements["AddUser_1"].Font = Enum.Font.Garamond
+	uiElements["AddUser_1"].TextScaled = true
+	uiElements["AddUser_1"].TextColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["AddUser_1"].TextSize = 14
+	uiElements["AddUser_1"].Text = "Add User"
+	uiElements["AddUser_1"].TextWrapped = true
+
+	uiElements["ImageLabel_3"].Parent = uiElements["kill-aura"]
+	uiElements["ImageLabel_3"].Position = UDim2.new(0.7202951312065125, 0, 0.47351065278053284, 0)
+	uiElements["ImageLabel_3"].Size = UDim2.new(0.240528866648674, 0, 0.027044037356972694, 0)
+	uiElements["ImageLabel_3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["ImageLabel_3"].ImageColor3 = Color3.fromRGB(243, 227, 187)
+	uiElements["ImageLabel_3"].BorderColor3 = Color3.fromRGB(43, 36, 25)
+	uiElements["ImageLabel_3"].BorderSizePixel = 5
+	uiElements["ImageLabel_3"].Image = "rbxassetid://4701838826"
+	uiElements["ImageLabel_3"].ScaleType = Enum.ScaleType.Crop
+
+	uiElements["Users"].Parent = uiElements["kill-aura"]
+	uiElements["Users"].Position = UDim2.new(0.7003836035728455, 0, 0.5786823034286499, 0)
+	uiElements["Users"].Size = UDim2.new(0.2814580500125885, 0, 0.3448723256587982, 0)
+	uiElements["Users"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["Users"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["Users"].BorderSizePixel = 0
+	uiElements["Users"].ZIndex = 2
+	uiElements["Users"].BackgroundTransparency = 1
+	uiElements["Users"].Font = Enum.Font.Garamond
+	uiElements["Users"].TextScaled = true
+	uiElements["Users"].TextColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["Users"].Text = "WHITELIST"
+	uiElements["Users"].TextWrapped = true
+	uiElements["Users"].TextYAlignment = Enum.TextYAlignment.Top
+
+	uiElements["Hide"].Parent = uiElements["kill-aura"]
+	uiElements["Hide"].Position = UDim2.new(0.5600000023841858, 0, 0.943221390247345, 0)
+	uiElements["Hide"].Size = UDim2.new(0.12327223271131516, 0, 0.0355546772480011, 0)
+	uiElements["Hide"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["Hide"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["Hide"].BorderSizePixel = 0
+	uiElements["Hide"].ZIndex = 2
+	uiElements["Hide"].BackgroundTransparency = 1
+	uiElements["Hide"].Font = Enum.Font.Garamond
+	uiElements["Hide"].TextScaled = true
+	uiElements["Hide"].TextColor3 = Color3.fromRGB(0, 0, 0)
+	uiElements["Hide"].TextSize = 14
+	uiElements["Hide"].Text = "Hide"
+	uiElements["Hide"].TextWrapped = true
+
+	uiElements["ImageLabel_4"].Parent = uiElements["kill-aura"]
+	uiElements["ImageLabel_4"].Position = UDim2.new(0.5600000023841858, 0, 0.943221390247345, 0)
+	uiElements["ImageLabel_4"].Size = UDim2.new(0.12327223271131516, 0, 0.0355546772480011, 0)
+	uiElements["ImageLabel_4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	uiElements["ImageLabel_4"].ImageColor3 = Color3.fromRGB(243, 227, 187)
+	uiElements["ImageLabel_4"].BorderColor3 = Color3.fromRGB(43, 36, 25)
+	uiElements["ImageLabel_4"].BorderSizePixel = 5
+	uiElements["ImageLabel_4"].Image = "rbxassetid://4701838826"
+	uiElements["ImageLabel_4"].ScaleType = Enum.ScaleType.Crop
+	return uiElements
+end;
+local Gui = nil;
+local Enabled = true;
+local LocalPlayer = game.Players.LocalPlayer;
+local Event = game.ReplicatedStorage:WaitForChild("Events"):WaitForChild("30");
+local WhiteList = {
+	
+}
+
+function Attack(Target:Model)
+	if Target:IsA("Model") and Target:IsDescendantOf(workspace) and Target:FindFirstChildOfClass("Humanoid") and Target ~= LocalPlayer.Character then
+		Event:FireServer(
+			"Attack",
+			Target
+		);
+	end;
+end;
+
+if not game.CoreGui:FindFirstChild("kill-aura") then
+	Gui = CreateGui();
+else
+	game.CoreGui:FindFirstChild("kill-aura"):Destroy();
+	Gui = CreateGui();
+end;
+
+Gui["Enable"].MouseButton1Click:Connect(
+	function()
+		Enabled = not Enabled;
+		if Enabled == false then
+			Gui["Enable"].Text = "ENABLE KILL AURA";
+		elseif Enabled == true then
+			Gui["Enable"].Text = "DISABLE KILL AURA";
+		end;
+	end
+);
+
+Gui["Hide"].MouseButton1Click:Connect(
+	function()
+		for i,v:Model in pairs(Gui) do
+			if v ~= Gui["Hide"] then
+				if not v:IsA("ScreenGui") then
+					v.Visible = not v.Visible;
+				end;
+			end;
+		end;
+	end
+);
+
+Gui["AddUser_1"].MouseButton1Click:Connect(
+	function()
+		if Gui["AddUser"].Text:gsub(" ","") ~= "" then
+			if game.Players:FindFirstChild(Gui.AddUser.Text) and not table.find(WhiteList,Gui.AddUser.Text) then
+				table.insert(WhiteList,Gui.AddUser.Text);
+				for i,v in pairs(WhiteList) do
+					if Gui.Users.Text ~= "" then
+						Gui["Users"].Text = "";
+					end;
+					Gui["Users"].Text = Gui["Users"].Text.."\n"..v;
+				end;
+			elseif table.find(WhiteList,Gui.AddUser.Text) then
+				for i,v in pairs(WhiteList) do
+					if v == Gui.AddUser.Text then
+						table.remove(WhiteList,i);
+						print("hi")
+						for i,v in pairs(WhiteList) do
+							if Gui.Users.Text ~= "" then
+								Gui["Users"].Text = "";
+							end;
+							Gui["Users"].Text = Gui["Users"].Text.."\n"..v;
+						end;
+					end;
+				end;
+			end;
+		end;
+	end
+);
+
+spawn(
+	function()
+		while wait(5) do
+			for i,v in pairs(WhiteList) do
+				if Gui.Users.Text ~= "" then
+					Gui["Users"].Text = "";
+				end;
+				Gui["Users"].Text = Gui["Users"].Text.."\n"..v;
+			end;
+		end;
+	end
+);
+
+spawn(
+	function()
+		while wait() do
+			if LocalPlayer.Character ~= nil then
+				if LocalPlayer.Character:GetAttribute("Monster") == true then
+					for i, Target in pairs(game.Players:GetPlayers()) do
+						if Target ~= LocalPlayer then
+							if Target:DistanceFromCharacter(LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position) < 10 then
+								if not table.find(WhiteList,Target.Name) then
+									Attack(Target);
+								end;
+							end;
+						end;
+					end;
+				else
+					if Enabled == true then
+						Enabled = false;
+						Gui["Enable"].Text = "ENABLE KILL AURA (Your not cannibal.)";
+						delay(
+							1,
+							function()
+								Gui["Enable"].Text = "ENABLE KILL AURA";
+							end
+						);
+					end;
+				end;
+			end;
+		end;
+	end
+);
